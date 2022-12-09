@@ -3,7 +3,7 @@
 module Helpers
   class NumberHelper
     def self.round_to_nearest(number, nearest)
-      ((number * nearest).round / nearest.to_f)
+      ((number * nearest).ceil / nearest.to_f)
     end
   end
 end

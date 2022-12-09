@@ -9,5 +9,6 @@ module TorcTest
 
   product_lines = InputReaderService.call
   products = product_lines.map { |product_line| ProductBuilder.build_for(product_line) }.flatten
-  ReceiptService.call(products: products)
+  ReceiptService.call(products: products) if products.any?
+  exit 1
 end

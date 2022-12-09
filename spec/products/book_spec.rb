@@ -30,7 +30,7 @@ RSpec.describe Book do
       end
 
       it "returns the price after taxes" do
-        expect(product.total_price).to eq(13.09)
+        expect(product.total_price).to eq(13.14)
       end
     end
   end

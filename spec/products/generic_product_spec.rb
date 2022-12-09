@@ -30,7 +30,7 @@ RSpec.describe GenericProduct do
       end
 
       it "returns the price after taxes" do
-        expect(product.total_price).to eq(14.34)
+        expect(product.total_price).to eq(14.39)
       end
     end
   end

@@ -5,6 +5,6 @@ class ImportedTax
   TAX_VALUE = 0.05
 
   def self.calculate(product)
-    Helpers::NumberHelper.round_to_nearest(product.price_before_taxes * TAX_VALUE, 20)
+    Helpers::NumberHelper.round_to_nearest(product.price * TAX_VALUE, 20)
   end
 end

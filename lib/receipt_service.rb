@@ -12,8 +12,8 @@ class ReceiptService < ApplicationService
     products.each { |product| puts "#{product.quantity} #{product.name}: #{product.total_price}" }
     total_price = products.sum(&:total_price).round(2)
     total_before_taxes = products.sum(&:price_before_taxes).round(2)
-    sales_taxes = total_price - total_before_taxes
-    puts "Sales Taxes: #{sales_taxes.round(2)}"
-    puts "Total: #{total_price}"
+    sales_taxes = (total_price - total_before_taxes).round(2)
+    puts "Sales Taxes: #{sales_taxes}"
+    puts "Total: #{"%.2f" % total_price.to_s}"
   end
 end

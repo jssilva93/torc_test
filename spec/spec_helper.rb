@@ -6,6 +6,8 @@ require_relative  "../lib/products/medicine"
 require_relative  "../lib/products/generic_product"
 require_relative  "../lib/taxes/basic_tax"
 require_relative  "../lib/taxes/imported_tax"
+require_relative  "../lib/application_service"
+require_relative  "../lib/input_reader_service"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
