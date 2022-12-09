@@ -11,6 +11,8 @@ To run the project tests, run the following command:
 
 ```ruby thor_test.rb ```
 
-To run the project tests, run the following command:
+To run the project tests, run the following command after executing bundle install:
 
 ```rspec```
+or
+```bundle exec rspec```
